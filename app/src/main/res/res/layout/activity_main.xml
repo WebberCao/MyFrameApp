@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hna.echequeapp.ui.activity.MainActivity">
+
+    <com.hna.echequeapp.widget.MyViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.hna.echequeapp.widget.MyViewPager>
+
+    <com.hna.echequeapp.widget.CustomRadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        app:selectedColor="#21a57e"
+        app:contentBGColor="#2169a4"
+        android:background="#00ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            style="@style/FootTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/bg_foot_icon_home"
+            android:text="@string/foot_tab_home" />
+        <RadioButton
+            android:id="@+id/radio_discount"
+            style="@style/FootTabStyle"
+            android:drawableTop="@drawable/bg_foot_icon_discount"
+            android:text="@string/foot_tab_discount" />
+        <RadioButton
+            android:id="@+id/radio_card"
+            style="@style/FootTabStyle"
+            android:drawableTop="@drawable/bg_foot_icon_card"
+            android:text="@string/foot_tab_card" />
+        <RadioButton
+            android:id="@+id/radio_my"
+            style="@style/FootTabStyle"
+            android:drawableTop="@drawable/bg_foot_icon_my"
+            android:text="@string/foot_tab_my" />
+
+    </com.hna.echequeapp.widget.CustomRadioGroup>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="selectedColor" format="color"/>
+    <attr name="contentBGColor" format="color"/>
+    <attr name="selectedPadding" format="dimension"/>
+    <!--name 是自定义控件的类名-->
+    <declare-styleable name="CustomRadioGroup">
+        <attr name="selectedColor"/>
+        <attr name="contentBGColor"/>
+        <attr name="selectedPadding"/>
+    </declare-styleable>
+
+</resources>
